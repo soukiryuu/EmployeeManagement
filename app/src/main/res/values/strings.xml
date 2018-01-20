@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EmployeeManagement</string>
+    <string name="title_activity_calender">CalenderActivity</string>
 </resources>

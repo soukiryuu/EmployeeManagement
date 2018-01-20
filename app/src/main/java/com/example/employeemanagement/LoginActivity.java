@@ -53,9 +53,9 @@ public class LoginActivity extends AppCompatActivity {
                 editor.putString("user_id","test");
                 editor.commit();
 
-//                Intent intent = new Intent(LoginActivity.this,Calender.class);
-//                startActivity(intent);
-//                finish();
+                Intent intent = new Intent(LoginActivity.this,CalenderActivity.class);
+                startActivity(intent);
+                finish();
 //                }else ("ログインしていなかったら"){
 //                    //webviewをリロード
 //                }
