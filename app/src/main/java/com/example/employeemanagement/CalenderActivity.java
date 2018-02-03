@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.employeemanagement.Helper.DBHelper;
 import com.github.sundeepk.compactcalendarview.CompactCalendarView;
 
 import java.text.DateFormat;
@@ -23,8 +24,8 @@ public class CalenderActivity extends AppCompatActivity {
     public CompactCalendarView compactCalendarView;
     private SimpleDateFormat dateFormatForMonth = new SimpleDateFormat("yyyy年MM月カレンダー", Locale.getDefault());
     private SimpleDateFormat dateFormatForDay = new SimpleDateFormat("yyyy年MM月dd日", Locale.getDefault());
-    private DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-    private DateFormat dateFormat2 = new SimpleDateFormat("yyyy-MM");
+//    private DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+//    private DateFormat dateFormat2 = new SimpleDateFormat("yyyy-MM");
     private DBHelper dbHelper = null;
     private String user_id = "test0003";
     private SharedPreferences sharedPreferences;
