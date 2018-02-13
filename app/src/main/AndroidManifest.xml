@@ -19,7 +19,8 @@
         <activity
             android:name=".CalenderActivity"
             android:label="@string/title_activity_calender"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ManagementDetailActivity"></activity>
     </application>
 
 </manifest>
