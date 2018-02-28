@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="remarks_list">
+        <item></item>
+        <item>法定休日</item>
+        <item>有給</item>
+        <item>遅刻</item>
+        <item>早退</item>
+        <item>欠勤</item>
+        <item>特別休暇</item>
+        <item>忌引</item>
+    </string-array>
+
+</resources>

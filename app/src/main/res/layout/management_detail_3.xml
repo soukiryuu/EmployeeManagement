@@ -45,38 +45,18 @@
             android:id="@+id/remarks1_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="備考1" />
+            android:text="備考" />
 
-        <TextClock
-            android:id="@+id/remarks1_clock"
+        <Spinner
+            android:id="@+id/remarks_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="@drawable/time_background"
             android:padding="5dp"
-            android:textSize="18sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/remarks2_tv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="備考2" />
-
-        <TextClock
-            android:id="@+id/remarks2_clock"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/time_background"
-            android:padding="5dp"
-            android:textSize="18sp" />
+            android:spinnerMode="dialog"
+            android:textSize="18sp"
+            android:entries="@array/remarks_list"/>
     </LinearLayout>
 
 </TableRow>

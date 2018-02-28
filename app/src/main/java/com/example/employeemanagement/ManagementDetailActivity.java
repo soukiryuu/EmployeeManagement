@@ -66,6 +66,31 @@ public class ManagementDetailActivity extends AppCompatActivity {
         TextView tv = (TextView) findViewById(R.id.click_date_tv);
         tv.setText(day_str);
 
+        tv_arr[0] = (TextView)findViewById(R.id.start_clock);
+        tv_arr[1] = (TextView)findViewById(R.id.end_clock);
+        tv_arr[2] = (TextView)findViewById(R.id.break_clock);
+        tv_arr[3] = (TextView)findViewById(R.id.sum1_clock);
+        tv_arr[4] = (TextView)findViewById(R.id.ses_clock);
+        tv_arr[5] = (TextView)findViewById(R.id.dispatch_clock);
+        tv_arr[6] = (TextView)findViewById(R.id.entrusted_clock);
+        tv_arr[7] = (TextView)findViewById(R.id.in_busi_clock);
+        tv_arr[8] = (TextView)findViewById(R.id.sum2_clock);
+
+        remarks_edit = (EditText)findViewById((R.id.remarks_et));
+
+        for (int i=0; i<tv_arr.length; i++) {
+            if (i == 3 || i == 8){
+                continue;
+            }
+            tv_arr[i].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.d("TextClick","クリックされた");
+                    MyTimePickerDialog((TextView) v);
+                }
+            });
+        }
+
         //APIに問い合わせる
 
         //保存時の処理
