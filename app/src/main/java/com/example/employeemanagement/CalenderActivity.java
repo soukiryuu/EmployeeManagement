@@ -57,9 +57,9 @@ public class CalenderActivity extends AppCompatActivity {
 //                    startActivity(bebuser_it);
                     return true;
                 case R.id.navigation_notifications:
-//                    Intent setting_it = new Intent(CalenderActivity.this,SettingActivity.class);
-//                    setting_it.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                    startActivity(setting_it);
+                    Intent setting_it = new Intent(CalenderActivity.this,SettingActivity.class);
+                    setting_it.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(setting_it);
                     return true;
             }
             return false;

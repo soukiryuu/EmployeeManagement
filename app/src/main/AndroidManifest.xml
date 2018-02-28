@@ -20,7 +20,10 @@
             android:name=".CalenderActivity"
             android:label="@string/title_activity_calender"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ManagementDetailActivity"></activity>
+        <activity android:name=".ManagementDetailActivity" />
+        <activity android:name=".SettingActivity">
+            android:theme= "style/
+        </activity>
     </application>
 
 </manifest>
