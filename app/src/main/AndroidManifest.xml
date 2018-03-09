@@ -21,9 +21,8 @@
             android:label="@string/title_activity_calender"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ManagementDetailActivity" />
-        <activity android:name=".SettingActivity">
-            android:theme= "style/
-        </activity>
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".SampleActivity"></activity>
     </application>
 
 </manifest>

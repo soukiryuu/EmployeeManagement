@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.example.employeemanagement.Controller.CalenderController;
 import com.example.employeemanagement.Helper.DBHelper;
+import com.example.employeemanagement.CalenderView;
 import com.github.sundeepk.compactcalendarview.CompactCalendarView;
 import com.github.sundeepk.compactcalendarview.domain.Event;
 
@@ -53,8 +54,8 @@ public class CalenderActivity extends AppCompatActivity {
 //                    mTextMessage.setText(R.string.title_home);
                     return true;
                 case R.id.navigation_dashboard:
-//                    Intent bebuser_it = new Intent(Calender.this,BEBUserActivity.class);
-//                    startActivity(bebuser_it);
+                    Intent bebuser_it = new Intent(CalenderActivity.this,SampleActivity.class);
+                    startActivity(bebuser_it);
                     return true;
                 case R.id.navigation_notifications:
                     Intent setting_it = new Intent(CalenderActivity.this,SettingActivity.class);
