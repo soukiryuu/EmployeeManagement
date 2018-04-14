@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:id="@+id/cal_frame"
-    tools:context="com.example.employeemanagement.SampleActivity">
+    tools:context="com.example.employeemanagement.TopActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -149,14 +149,13 @@
 
     <include
         layout="@layout/border_line"/>
-
-    <LinearLayout
-        android:id="@+id/days_contents"
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/calendar_pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-    </LinearLayout>
+    </android.support.v4.view.ViewPager>
 
 
 </LinearLayout>

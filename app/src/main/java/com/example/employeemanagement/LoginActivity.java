@@ -5,13 +5,28 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.webkit.HttpAuthHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 
+import com.example.employeemanagement.Controller.AsyncAPIRequest;
 import com.example.employeemanagement.R;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -19,25 +34,14 @@ public class LoginActivity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
     private Button login_btn;
+    private String api_url = "http://150.95.134.62/api/login";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        //ログインは統合管理システムのサイトに任せたい
-        //ログイン後はボタンを押してもらってAPIにログイン状況の問合せをする
-        //ログインのレスポンスが返却されればカレンダーに遷移
-        webView = (WebView)findViewById(R.id.login_webview);
-        //basic認証のダイアログが出ないので上手く作るしかない？←嫌じゃ
-        webView.setWebViewClient(new WebViewClient(){
-            @Override
-            public void onReceivedHttpAuthRequest(WebView view,
-                                                  HttpAuthHandler handler, String host, String realm) {
-                handler.proceed("blueinc", "blue1234");
-            }
-        });
-        webView.loadUrl("http://163.44.174.191/ic_v2/login");
+        new AsyncAPIRequest().execute(api_url);
 
         //ログインをしたら押す
         login_btn = (Button)findViewById(R.id.login_button);
@@ -53,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                 editor.putString("user_id","test");
                 editor.commit();
 
-                Intent intent = new Intent(LoginActivity.this,CalenderActivity.class);
+                Intent intent = new Intent(LoginActivity.this,TopActivity.class);
                 startActivity(intent);
                 finish();
 //                }else ("ログインしていなかったら"){

@@ -5,8 +5,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -18,7 +16,6 @@ import android.widget.TextView;
 
 import com.example.employeemanagement.Controller.CalenderController;
 import com.example.employeemanagement.Helper.DBHelper;
-import com.example.employeemanagement.CalenderView;
 import com.github.sundeepk.compactcalendarview.CompactCalendarView;
 import com.github.sundeepk.compactcalendarview.domain.Event;
 
@@ -54,7 +51,7 @@ public class CalenderActivity extends AppCompatActivity {
 //                    mTextMessage.setText(R.string.title_home);
                     return true;
                 case R.id.navigation_dashboard:
-                    Intent bebuser_it = new Intent(CalenderActivity.this,SampleActivity.class);
+                    Intent bebuser_it = new Intent(CalenderActivity.this,TopActivity.class);
                     startActivity(bebuser_it);
                     return true;
                 case R.id.navigation_notifications:

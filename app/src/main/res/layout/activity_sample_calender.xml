@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.example.employeemanagement.CalenderView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.employeemanagement.CalenderView"
-    android:id="@+id/calendarView">
+    android:id="@+id/calendarView"
+    android:orientation="vertical">
 
-    <!--<com.example.employeemanagement.Helper.CalenderView-->
-        <!--android:id="@+id/calendarView"-->
-        <!--android:layout_width="260dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_marginTop="49dp" />-->
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager">
 
-</com.example.employeemanagement.CalenderView>
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
