@@ -34,9 +34,9 @@ public class PagerFragment extends Fragment {
         Bundle bundle = getArguments();
         int index = bundle.getInt("INDEX");
 
-        month_view = inflater.inflate(R.layout.activity_sample, container, false);
-        TextView textView = (TextView) month_view.findViewById(R.id.sample_tv);
-        textView.setText("index:"+index);
+//        month_view = inflater.inflate(R.layout.activity_sample, container, false);
+//        TextView textView = (TextView) month_view.findViewById(R.id.sample_tv);
+//        textView.setText("index:"+index);
 
 //        Bundle bundle = getArguments();
 //

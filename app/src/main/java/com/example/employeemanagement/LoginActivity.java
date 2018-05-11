@@ -30,7 +30,6 @@ import java.util.ArrayList;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private WebView webView;
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
     private Button login_btn;

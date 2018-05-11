@@ -24,7 +24,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ManagementDetailActivity" />
         <activity android:name=".SettingActivity" />
-        <activity android:name=".TopActivity"></activity>
+        <activity
+            android:name=".TopActivity"
+            android:label="@string/title_activity_sample_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

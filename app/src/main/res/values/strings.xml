@@ -2,4 +2,11 @@
     <string name="app_name">BIMS</string>
     <string name="title_activity_calender">カレンダー</string>
     <string name="format_month_year">yyyy MM月</string>
+    <string name="title_activity_sample_main">SampleMainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 </resources>
